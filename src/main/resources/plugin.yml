@@ -1,0 +1,26 @@
+name: ITo-NightVision
+version: '1.0'
+main: pl.polsatgranie.itomsd.nightVision.NightVision
+api-version: '1.13'
+load: STARTUP
+authors: [ PolsatGraniePL ]
+description: IToMSD plugin
+website: https://itomsd.com/
+commands:
+  nv:
+    description: Toggle night vision.
+    usage: /<command> [player]
+  nvreload:
+    description: Reload the configuration.
+    aliases:
+      - nightvisionreload
+permissions:
+  itomsd.nightvision:
+    description: Allows the use of /nv
+    default: op
+  itomsd.nightvision.others:
+    description: Allows the use of /nv [player]
+    default: op
+  itomsd.nightvision.reload:
+    description: Allows reloading the plugin configuration
+    default: op
